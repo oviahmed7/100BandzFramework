@@ -9,54 +9,40 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
   </properties>
 
   <dependencies>
-
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.14.3</version>        </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-server</artifactId>
       <version>4.0.0-alpha-2</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.1.4</version>
     </dependency>
-
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>6.14.3</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.jsoup</groupId>
-      <artifactId>jsoup</artifactId>
-      <version>1.14.3</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.poi</groupId>
-      <artifactId>poi-ooxml</artifactId>
-      <version>3.7</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.relevantcodes</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>2.41.2</version>
-    </dependency>
-
+    <!-- extent reports -->
     <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
       <version>3.1.5</version>
     </dependency>
-
+    <dependency>
+      <groupId>com.relevantcodes</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>2.41.2</version>
+    </dependency>
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
@@ -67,23 +53,23 @@
       <artifactId>commons-lang3</artifactId>
       <version>3.7</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
     <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <version>4.4.0</version>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>3.7</version>
     </dependency>
-
-    <dependency>
-      <groupId>org.mongodb</groupId>
-      <artifactId>mongo-java-driver</artifactId>
-      <version>3.12.10</version>
-    </dependency>
-
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.27</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongo-java-driver</artifactId>
+      <version>3.12.10</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
@@ -112,19 +98,11 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
         <configuration>
           <suiteXmlFiles>
-                        <suiteXmlFile>C:\Users\17185\Downloads\Bootcamp\src\test\resources\pet-runner.xml</suiteXmlFile>
-            <!--            <suiteXmlFile>C:\Users\17185\Documents\PNT\src\test\resources\opencart-runner.xml</suiteXmlFile>-->
-            <!--            <suiteXmlFile>C:\Users\17185\Documents\PNT\src\test\resources\parabank-runner.xml</suiteXmlFile>-->
-            <!--            <suiteXmlFile>C:\Users\17185\Documents\PNT\src\test\resources\png-runner.xml</suiteXmlFile>-->
-            <!--            <suiteXmlFile>C:\Users\17185\Documents\PNT\src\test\resources\rahulshettyacademy-runner.xml</suiteXmlFile>-->
-            <!--            <suiteXmlFile>C:\Users\17185\Documents\PNT\src\test\resources\lamdatest-runner.xml</suiteXmlFile>-->
-
-\
+            <suiteXmlFile>/Users/ovi/Downloads/100thbandzgang/src/test/resources/opencart-runner.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

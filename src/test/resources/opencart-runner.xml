@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Open cart testing">
+    <parameter name="url" value="https://www.opencart.com/index.php?route=common/home"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="os" value="mac"></parameter>
+
+
+
+    <test name="opencarttest">
+        <classes>
+
+            <class name="apps.opencart.DownloadTest"></class>
+            <class name="apps.opencart.LoginTest"></class>
+            <class name="apps.opencart.MarketplaceTest"></class>
+            <class name="apps.opencart.RegisterTest"></class>
+            <class name="apps.opencart.SearchTest"></class>
+            <class name="apps.opencart.Demotest"></class>
+
+
+
+
+        </classes>
+    </test>
+
+
+
+
+</suite>
+
